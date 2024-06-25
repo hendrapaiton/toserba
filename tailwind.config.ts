@@ -23,7 +23,7 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "main-red-barn": "#864459",
+        "main-red-barn": "#802c6f",
         "secondary-light-blue": "#6BB9B2",
         "light-pink": "#FFF9FF",
       },
