@@ -18,7 +18,8 @@ export default function HeroContent() {
         />
         <div className="flex max-w-2xl flex-col items-center md:items-start">
           <h2 className="text-center text-3xl font-semibold leading-tight md:text-left lg:text-5xl">
-            belanja kebutuhan apasaja<br /> 
+            belanja kebutuhan apasaja
+            <br />
             <span className="uppercase">Toserba</span>
           </h2>
           <div className="mt-8 flex flex-col gap-2.5 min-[380px]:flex-row">
@@ -38,8 +39,8 @@ export function Hero() {
   const menu: Nav[] = [
     { name: "Beranda", link: "/" },
     { name: "Produk", link: "/product" },
+    { name: "Tentang", link: "/about" },
     { name: "Kontak", link: "/contact" },
-    { name: "Anggota", link: "/member" },
   ];
 
   return (
