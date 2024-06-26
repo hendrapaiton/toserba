@@ -1,17 +1,19 @@
 import { NextUIProvider } from "@nextui-org/react";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import type { Metadata } from "next";
+import { Gochi_Hand, Jost } from 'next/font/google';
 import { Cart } from "@/components/layout/cart";
 import { Footer } from "@/components/layout/footer";
 import { Menu } from "@/components/layout/menu";
-import Image from "next/image";
-import { Header } from "@/components/layout/header";
-import { Nav } from "Product";
 import { Logo } from "@/components/layout/logo";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const jost = Jost({ subsets: ['latin'], variable: '--main-font' });
+const gochiHand = Gochi_Hand({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-gochi-hand'
+});
 
 export const metadata: Metadata = {
   title: "Toserba",
@@ -23,10 +25,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${jost.className} ${gochiHand.variable}`}>
         <NextUIProvider>
           <ThemeProvider attribute="class" defaultTheme="dark">
             <main className="pt-20 lg:pt-0">
