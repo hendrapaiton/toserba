@@ -8,6 +8,12 @@ const nextConfig = {
         port: "",
         pathname: "/icons/**",
       },
+      {
+        protocol: "https",
+        hostname: "fakestoreapi.com",
+        port: "",
+        pathname: "/img/**",
+      },
     ],
   },
 };
