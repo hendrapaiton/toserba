@@ -38,7 +38,7 @@ export default function HeroContent() {
 export function Hero() {
   const menu: Nav[] = [
     { name: "Beranda", link: "/" },
-    { name: "Produk", link: "/product" },
+    { name: "Produk", link: "/gallery" },
     { name: "Tentang", link: "/about" },
     { name: "Kontak", link: "/contact" },
   ];
