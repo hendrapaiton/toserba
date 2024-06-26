@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function HeroContent() {
   return (
-    <div className="container relative z-10 mx-auto max-w-[1140px] pt-20">
+    <div className="container relative z-10 mx-auto max-w-[1140px] pt-24">
       <div className="mx-auto flex flex-col items-center justify-between md:flex-row">
         <Image
           src={"https://fakestoreapi.com/icons/intro.svg"}
