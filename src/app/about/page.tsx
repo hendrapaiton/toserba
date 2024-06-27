@@ -1,3 +1,3 @@
-export function Member() {
+export default function AboutPage() {
   return <></>;
 }
